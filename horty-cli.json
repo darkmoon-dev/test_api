@@ -1,0 +1,6 @@
+{
+  "sourceRoot": "src",
+  "language": "typescript",
+  "gitEnabled": true,
+  "getRemoteLinked": true
+}

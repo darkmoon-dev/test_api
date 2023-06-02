@@ -6,3 +6,13 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model Category {
+  id             Int @id @default(autoincrement())
+  label          String @db.VarChar(100)          
+  description    String? @db.Text    
+  createdAt      DateTime @default(now())      
+  updatedAt      DateTime @updatedAt      
+  deleted        Boolean @default(false)        
+  deletedAt      DateTime?      
+}
